@@ -13,6 +13,7 @@ qt_add_executable(CextEditor
     mainwindow.ui
     about.ui
     aboutdialog.h aboutdialog.cpp
+    placeholderfile.h placeholderfile.cpp
 )
 
 target_link_libraries(CextEditor
