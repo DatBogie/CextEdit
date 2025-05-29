@@ -14,10 +14,10 @@ class AboutDialog : public QDialog
 {
     Q_OBJECT
 public:
-    AboutDialog(QWidget *parent = nullptr);
+    AboutDialog();
     ~AboutDialog();
 private:
-    Ui::MainWindow *ui;
+    Ui::AboutDialog *ui;
 };
 
 #endif // ABOUTDIALOG_H

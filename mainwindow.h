@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "aboutdialog.h"
-#include <QFile>
+#include <QFileInfo>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,21 +22,23 @@ public:
 private:
     Ui::MainWindow *ui;
     AboutDialog* aboutWin;
-    void setFontSize();
+    void setFontSize(int pt, int mode = 0);
     bool safelyClose();
-    QFile activeFile;
-    bool fileExists;
+    QFileInfo* activeFile = nullptr;
+    bool fileExists = false;
     QString initData;
-
+    QString TITLE;
+    QString ACTIVE_TITLE;
+    void reset();
 protected:
     void closeEvent(QCloseEvent *event);
 
 private slots:
     void NewFile();
-    void OpenFile();
-    bool SaveFile();
-    bool SaveAs();
-    bool Save();
+    void OpenFile(QString* p = nullptr);
+    bool SaveFile(QString* p = nullptr);
+    bool SaveAs(QString* p = nullptr);
+    bool Save(QString* p = nullptr);
     void DeleteFile();
     void textEdited();
 };

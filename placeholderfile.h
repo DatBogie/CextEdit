@@ -1,14 +1,13 @@
 #ifndef PLACEHOLDERFILE_H
 #define PLACEHOLDERFILE_H
 
-#include <QFile>
+#include <QFileInfo>
 #include <QString>
 
-class PlaceHolderFile : public QFile
-{
-    Q_OBJECT
+class PlaceHolderFile : public QFileInfo {
 public:
     explicit PlaceHolderFile(QString name) { this->name = name; }
+    QString fileName() { return name; }
 private:
     QString name;
 };

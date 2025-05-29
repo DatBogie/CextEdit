@@ -8,12 +8,17 @@ qt_standard_project_setup()
 qt_add_executable(CextEditor
     WIN32 MACOSX_BUNDLE
     main.cpp
+
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    about.ui
-    aboutdialog.h aboutdialog.cpp
-    placeholderfile.h placeholderfile.cpp
+
+    aboutdialog.ui
+    aboutdialog.h
+    aboutdialog.cpp
+
+    placeholderfile.h
+
 )
 
 target_link_libraries(CextEditor
