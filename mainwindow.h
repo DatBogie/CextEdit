@@ -1,8 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
 #include "aboutdialog.h"
+#include "preferences.h"
+
+#include <QMainWindow>
 #include <QFileInfo>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +24,7 @@ public:
 private:
     Ui::MainWindow *ui;
     AboutDialog* aboutWin;
+    Preferences* pref;
     void setFontSize(int pt, int mode = 0);
     bool safelyClose();
     QFileInfo* activeFile = nullptr;
@@ -30,6 +33,7 @@ private:
     QString TITLE;
     QString ACTIVE_TITLE;
     void reset();
+    int DEFAULT_FONT_SIZE;
 protected:
     void closeEvent(QCloseEvent *event);
 

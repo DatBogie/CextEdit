@@ -46,7 +46,7 @@ border: none;</string>
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TextEditor&lt;br&gt;Dat Bogie&lt;br&gt;Made in Python with Qt&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CextEdit&lt;br/&gt;Dat Bogie&lt;br/&gt;Made in C++ with Qt&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="textFormat">
          <enum>Qt::TextFormat::AutoText</enum>

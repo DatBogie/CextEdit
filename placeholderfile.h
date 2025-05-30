@@ -4,11 +4,11 @@
 #include <QFileInfo>
 #include <QString>
 
-class PlaceHolderFile : public QFileInfo {
+class PlaceHolderFile : public QFileInfo
+{
 public:
-    explicit PlaceHolderFile(QString name) { this->name = name; }
-    QString fileName() { return name; }
-private:
+    PlaceHolderFile(QString name);
+    // QString fileName();
     QString name;
 };
 

@@ -7,6 +7,7 @@ AboutDialog::AboutDialog()
     : QDialog(), ui(new Ui::AboutDialog)
 {
     ui->setupUi(this);
+    setWindowTitle("About — CextEdit");
 }
 
 AboutDialog::~AboutDialog() {

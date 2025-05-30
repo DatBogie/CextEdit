@@ -1,3 +1,10 @@
 #include "placeholderfile.h"
-#include <QFile>
+
+#include <QFileInfo>
 #include <QString>
+
+PlaceHolderFile::PlaceHolderFile(QString name) : QFileInfo(name), name(name) {}
+
+// QString PlaceHolderFile::fileName() {
+//     return this->name;
+// }

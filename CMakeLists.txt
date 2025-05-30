@@ -16,8 +16,11 @@ qt_add_executable(CextEditor
     aboutdialog.ui
     aboutdialog.h
     aboutdialog.cpp
+    placeholderfile.h placeholderfile.cpp
+    preferences.h preferences.cpp preferences.ui
+    cextglobals.h
+    cextglobals.cpp
 
-    placeholderfile.h
 
 )
 
